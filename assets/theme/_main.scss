@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import 'variable', 'mixin', 'reset';
+
+//@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,600&display=swap&subset=japanese');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', 'Lato', sans-serif;
+  box-sizing: border-box;
+  color: $text-main;
+}
+
+@include tablet-and-pc {
+  html {
+    font-size: 100%;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  --transparant: #{$transparant};
+  --white: #{$white};
+  --almost-white: #{$almost-white};
+  //box-shadow:  20px 20px 60px #cdced1, -20px -20px 60px #ffffff;
+  --off-white: #{$off-white};
+  --off-blue: #{$off-blue};
+  --light-blue: #{$light-blue};
+
+  --box-shadow-m: #{$box-shadow-m};
+  --box-shadow-active: #{$box-shadow-active};
+  --box-shadow-hover: #{$box-shadow-hover};
+
+  /* Color styles */
+  --base: #{$base};
+  --base-liner: #{$base-liner};
+  --primary: #{$primary};
+  --primary-liner: #{$primary-liner};
+  --primary-liner-large: #{$primary-liner-large};
+  --primary-liner-light: #{$primary-liner-light};
+  --text-base: #{$text-base};
+  --text-main: #{$text-main};
+  --text-sub: #{$text-sub};
+  --text-emphasis: #{$text-emphasis};
+  --button-gray: #{$button-gray};
+  --unselected: #{$unselected};
+  --disabled: #{$disabled};
+  --border: #{$border};
+  --danger: #{$danger};
+  --filter-gray: #{$filter-gray};
+
+  /* Effect styles */
+  --shadow-drop: #{$shadow-drop};
+  --shadow-concave: #{$shadow-concave};
+  --shadow-base: #{$shadow-base};
+  --shadow-convex: #{$shadow-convex};
+  --shadow-convex-hover: #{$shadow-convex-hover};
+  --shadow-convex-large: #{$shadow-convex-large};
+  --shadow-icon: #{$shadow-icon};
+  --shadow-primary-concave: #{$shadow-primary-concave};
+  --danger-shadow-concave: #{$danger-shadow-concave};
+  --primary-shadow-concave: #{$primary-shadow-concave};
+  --liner-shadow-concave: #{$liner-shadow-concave};
+  --shadow-unselected-concave: #{$shadow-unselected-concave};
+}
+
+.dark-mode body {
+  --transparant: #{$dark-transparant};
+  --white: #{$dark-white};
+  --almost-white: #{$dark-almost-white};
+  --off-white: #{$dark-off-white};
+  --off-blue: #{$dark-off-blue};
+  --light-blue: #{$dark-light-blue};
+
+  --box-shadow-m: #{$dark-box-shadow-m};
+  --box-shadow-active: #{$dark-box-shadow-active};
+  --box-shadow-hover: #{$dark-box-shadow-hover};
+
+  /* Color styles */
+  --base: #{$dark-base};
+  --base-liner: #{$dark-base-liner};
+  --primary: #{$dark-primary};
+  --primary-liner: #{$dark-primary-liner};
+  --primary-liner-large: #{$dark-primary-liner-large};
+  --primary-liner-light: #{$dark-primary-liner-light};
+  --text-base: #{$dark-text-base};
+  --text-main: #{$dark-text-main};
+  --text-sub: #{$dark-text-sub};
+  --text-emphasis: #{$dark-text-emphasis};
+  --button-gray: #{$dark-button-gray};
+  --unselected: #{$dark-unselected};
+  --disabled: #{$dark-disabled};
+  --border: #{$dark-border};
+  --danger: #{$dark-danger};
+  --filter-gray: #{$dark-filter-gray};
+
+  /* Effect styles */
+  --shadow-drop: #{$dark-shadow-drop};
+  --shadow-concave: #{$dark-shadow-concave};
+  --shadow-base: #{$dark-shadow-base};
+  --shadow-convex: #{$dark-shadow-convex};
+  --shadow-convex-hover: #{$dark-shadow-convex-hover};
+  --shadow-convex-large: #{$dark-shadow-convex-large};
+  --shadow-icon: #{$dark-shadow-icon};
+  --shadow-primary-concave: #{$dark-shadow-primary-concave};
+  --danger-shadow-concave: #{$dark-danger-shadow-concave};
+  --primary-shadow-concave: #{$dark-primary-shadow-concave};
+  --liner-shadow-concave: #{$dark-liner-shadow-concave};
+  --shadow-unselected-concave: #{$dark-shadow-unselected-concave};
+}

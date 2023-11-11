@@ -1,0 +1,206 @@
+/* Color styles */
+$transparant: transparent;
+$white: #fff;
+
+$almost-white: #f1f2f6;
+$off-white: #d8dae4;
+$off-blue: #c4ceda;
+$light-blue: #55b3c099;
+
+$box-shadow-m: -27px -16px 20px 20px hsla(0, 0%, 100%, 0.5), 3px 3px 10px 4px rgba(162, 177, 196, 0.24), 25px 33px 56px -4px $off-white, 13px 13px 20px 0 $off-blue, 0 -4px 11px 0 $white, -10px -2px 10px 0 $white, -5px -5px 20px 9px hsla(0, 0%, 100%, 0.86);
+$box-shadow-active: inset 14px 14px 12px 0 rgba(196, 206, 218, 0.14), inset -3px -3px 5px 0 $white, inset 2px 2px 5px 0 rgba(196, 206, 218, 0.78), inset 1px 1px 16px -13px #6f8197;
+$box-shadow-hover: 2px 2px 4px 0 rgba(176, 196, 219, 0.53), -3px -3px 8px 4px $white, 3px 3px 15px 0 $off-blue;
+
+$blur: blur(0.1rem);
+$blur-l: blur(1rem);
+
+$spacing-0: 0;
+$spacing-1: 0.4rem;
+$spacing-2: 0.8rem;
+$spacing-3: 1.2rem;
+$spacing-4: 1.6rem;
+$spacing-5: 2rem;
+$spacing-6: 2.4rem;
+$spacing-7: 2.8rem;
+$spacing-8: 3.2rem;
+$spacing-9: 4rem;
+$spacing-xxs: 1rem;
+$spacing-s: 5%;
+$spacing-m: 10%;
+
+$font-tiny: 0.8rem;
+$font-xtra-small: 1rem;
+$font-small: 1.2rem;
+$font-medium: 1.4rem;
+$font-large: 1.6rem;
+$font-xtra-large: 1.8rem;
+$font-maximum: 3rem;
+
+$radius-0: 0;
+$radius-1: 0.4rem;
+$radius-2: 0.8rem;
+$radius-3: 1.2rem;
+$radius-4: 1.6rem;
+$radius-button: 5rem;
+$circle: 50% 50%;
+
+$border-4: 0.3rem;
+$border-1: 0.1rem;
+
+$single-line: 135%;
+$multi-line: 140%;
+$fit: 100%;
+
+// transition
+$transition-all: all 0.25s ease-in-out;
+$long-transition-all: all 0.5s ease;
+$xtra-long-transition-all: all 1s ease;
+$transition-color: color 0.15s ease-in-out;
+$transition-transform: transform 0.25s ease-in-out;
+$transition-box-shadow: box-shadow 0.18s ease;
+
+// Media Queries
+$pc-width: 768px;
+$sp-width: 480px;
+
+/* Color styles */
+$base: #eff1f6;
+$base-liner: linear-gradient(158.17deg, #f3f5fa -1.94%, #ebedf2 102.24%);
+$primary: #00c0c0;
+$primary-liner: linear-gradient(119.06deg, #3fdfd6 10.71%, #44d8e1 60.37%, #46dfd6 103.14%);
+$primary-liner-large: linear-gradient(91.58deg, #6bcedc -8.01%, #71e2dc 105.39%);
+$primary-liner-light: linear-gradient(180deg, #dbf2f3 0%, #d2f3f3 100%);
+$text-base: #446079;
+$text-main: #626a76;
+$text-sub: #838e95;
+$text-emphasis: #59616d;
+$button-gray: #889396;
+$unselected: #b8c1c7;
+$disabled: #adadad;
+$border: #c6d6df;
+$danger: #ed7f93;
+$filter-gray: #eff1f633;
+
+/* Effect styles */
+$shadow-drop: 0.2rem 0.2rem 0.3rem #a1a7aa99;
+$shadow-concave: inset 0.1rem 0.2rem 0.4rem #a5bac773, inset -0.2rem -0.2rem 0.3rem #ffffffcc;
+$shadow-base: 0.2rem 0.4rem 1rem #a5bac766, -0.1rem -0.1rem 0.2rem #ffffffb3, inset -0.6rem -0.8rem 1.2rem #ffffff73, inset 0.2rem 0.3rem 0.4rem #cbd5df66;
+$shadow-convex: 0.2rem 0.3rem 0.8rem #a5bac78c, -0.5rem -0.5rem 1rem #ffffff99;
+$shadow-convex-hover: 0.1rem 0.2rem 0.4rem #a5bac78c, -0.3rem -0.3rem 0.5rem #ffffff99;
+$shadow-convex-large: 0.3rem 0.5rem 0.12rem #a5bac773, -0.5rem -5rem 0.1rem #ffffffcc;
+$shadow-icon: 0.1rem 0.3rem 0.3rem #43afb640, -0.1rem -0.1rem 0.2rem #ffffff33;
+$shadow-primary-concave: inset 0.2rem 0.3rem 0.4rem #55b3c099;
+$danger-shadow-concave: inset 0.1rem 0.2rem 0.3rem #c0545999;
+$primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem #55b3c099;
+$liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem #86e1dc40;
+$shadow-unselected-concave: 0.2rem 0.3rem 0.4rem hsla(203, 12%, 60%, 0.45) inset, -0.2rem -0.2rem 0.3rem #ffffff59 inset;
+
+/* Dark Theme Colors */
+$dark-transparant: transparant;
+$dark-white: #fff;
+$dark-almost-white: #31363c;
+//20px 20px 60px #2a2e33, -20px -20px 60px #383e45;
+
+
+
+
+$dark-off-white:red;
+$dark-off-blue:red;
+$dark-light-blue:red;
+$dark-box-shadow-m:red;
+$dark-box-shadow-active:red;
+$dark-box-shadow-hover:red;
+$dark-base:red;
+$dark-base-liner:red;
+$dark-primary:red;
+$dark-primary-liner:red;
+$dark-primary-liner-large:red;
+$dark-primary-liner-light:red;
+$dark-text-base:red;
+$dark-text-main:red;
+$dark-text-sub:red;
+$dark-text-emphasis:red;
+$dark-button-gray:red;
+$dark-unselected:red;
+$dark-disabled:red;
+$dark-border:red;
+$dark-danger:red;
+$dark-filter-gray:red;
+$dark-shadow-drop:red;
+$dark-shadow-concave:red;
+$dark-shadow-base:red;
+$dark-shadow-convex:red;
+$dark-shadow-convex-hover:red;
+$dark-shadow-convex-large:red;
+$dark-shadow-icon:red;
+$dark-shadow-primary-concave:red;
+$dark-danger-shadow-concave:red;
+$dark-primary-shadow-concave:red;
+$dark-liner-shadow-concave:red;
+$dark-shadow-unselected-concave:red;
+
+
+
+//$dark-base: #121212;
+//$dark-text-base: #ffffff;
+//$dark-text-main: #c2c2c2;
+//$dark-text-sub: #a0a0a0;
+//$dark-text-emphasis: #b0b0b0;
+//$dark-button-gray: #616161;
+//$dark-unselected: #737373;
+//$dark-disabled: #555555;
+//$dark-border: #444444;
+//$dark-danger: #ff6e6e;
+//$dark-filter-gray: #1c1c1c;
+//
+///* Dark Theme Effect Styles */
+//$dark-shadow-drop: 0.2rem 0.2rem 0.3rem #00000099;
+//$dark-shadow-concave: inset 0.1rem 0.2rem 0.4rem #333333cc, inset -0.2rem -0.2rem 0.3rem #000000cc;
+//$dark-shadow-base: 0.2rem 0.4rem 1rem #33333366, -0.1rem -0.1rem 0.2rem #000000b3, inset -0.6rem -0.8rem 1.2rem #00000073, inset 0.2rem 0.3rem 0.4rem #33333366;
+//$dark-shadow-convex: 0.2rem 0.3rem 0.8rem #3333338c, -0.5rem -0.5rem 1rem #00000099;
+//$dark-shadow-convex-hover: 0.1rem 0.2rem 0.4rem #3333338c, -0.3rem -0.3rem 0.5rem #00000099;
+//$dark-shadow-convex-large: 0.3rem 0.5rem 0.12rem #33333373, -0.5rem -5rem 0.1rem #000000cc;
+//$dark-shadow-icon: 0.1rem 0.3rem 0.3rem #00000040, -0.1rem -0.1rem 0.2rem #00000033;
+//$dark-shadow-primary-concave: inset 0.2rem 0.3rem 0.4rem #22222299;
+//$dark-danger-shadow-concave: inset 0.1rem 0.2rem 0.3rem #700d0d99;
+//$dark-primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem #22222299;
+//$dark-liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem #4d4d4d40;
+//$dark-shadow-unselected-concave: 0.2rem 0.3rem 0.4rem hsla(203, 12%, 60%, 0.45) inset, -0.2rem -0.2rem 0.3rem #00000059 inset;
+//
+///* Neumorphic Dark Mode Variables */
+//$dark-bg: #242424;
+//$dark-text: #dcdcdc;
+//$dark-highlight: #2b2b2b;
+//$dark-shadow: #1f1f1f;
+//
+///* Color styles - Dark Mode */
+//$base: $dark-bg;
+//$base-liner: linear-gradient(158.17deg, $dark-highlight -1.94%, $dark-shadow 102.24%);
+//$primary: #00c0c0;
+//$primary-liner: linear-gradient(119.06deg, #3fdfd6 10.71%, #44d8e1 60.37%, #46dfd6 103.14%);
+//$primary-liner-large: linear-gradient(91.58deg, #6bcedc -8.01%, #71e2dc 105.39%);
+//$primary-liner-light: linear-gradient(180deg, #dbf2f3 0%, #d2f3f3 100%);
+//$text-base: $dark-text;
+//$text-main: #6b6b6b;
+//$text-sub: #8b8b8b;
+//$text-emphasis: #595959;
+//$button-gray: #777777;
+//$unselected: #4e4e4e;
+//$disabled: #606060;
+//$border: #535353;
+//$danger: #ff6f6f;
+//$filter-gray: #363636;
+//
+///* Effect styles - Dark Mode */
+//$shadow-drop: 0.2rem 0.2rem 0.3rem #00000066;
+//$shadow-concave: inset 0.1rem 0.2rem 0.4rem #00000044, inset -0.2rem -0.2rem 0.3rem $dark-bg;
+//$shadow-base: 0.2rem 0.4rem 1rem #00000033, -0.1rem -0.1rem 0.2rem $dark-shadow, inset -0.6rem -0.8rem 1.2rem $dark-shadow, inset 0.2rem 0.3rem 0.4rem $dark-shadow;
+//$shadow-convex: 0.2rem 0.3rem 0.8rem #00000077, -0.5rem -0.5rem 1rem $dark-bg;
+//$shadow-convex-hover: 0.1rem 0.2rem 0.4rem #00000077, -0.3rem -0.3rem 0.5rem $dark-bg;
+//$shadow-convex-large: 0.3rem 0.5rem 0.12rem #00000044, -0.5rem -5rem 0.1rem $dark-bg;
+//$shadow-icon: 0.1rem 0.3rem 0.3rem #00000033, -0.1rem -0.1rem 0.2rem $dark-bg;
+//$shadow-primary-concave: inset 0.2rem 0.3rem 0.4rem $dark-highlight;
+//$danger-shadow-concave: inset 0.1rem 0.2rem 0.3rem #ff404044;
+//$primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem $dark-highlight;
+//$liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem $dark-highlight;
+//$shadow-unselected-concave: 0.2rem 0.3rem 0.4rem #36363666 inset, -0.2rem -0.2rem 0.3rem $dark-bg inset;
