@@ -36,6 +36,8 @@ export default defineNuxtConfig({
   modules: ['nuxt-lucide-icons', '@nuxt/image', '@nuxtjs/color-mode', ['nuxt-mail', {
     message: {
       to: process.env.EMAIL_USER,
+      cc: '',
+      bcc: ''
     },
     smtp: {
       service: 'gmail',
