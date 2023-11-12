@@ -29,15 +29,15 @@ span.toggle {
   width: $spacing-9;
   border-radius: $radius-4;
   overflow: hidden;
-  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
-  box-shadow: var(--box-shadow-active);
+  box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px var(--off-white), 4px 4px 4px 0px var(--off-white) inset, -4px -4px 4px 0px var(--white) inset;
+  //box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
 }
 
-.toggle-state {
+input.toggle-state {
   display: none;
 }
 
-.indicator {
+span.indicator {
   height: 100%;
   width: 200%;
   background: var(--almost-white);
@@ -45,8 +45,20 @@ span.toggle {
   border-radius: 15px;
   transform: translate3d(-75%, 0, 0);
   transition: transform .45s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
-  box-shadow: var(--box-shadow-m);
+  //box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px #d1d9e6;
+  box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px var(--off-white);
+  box-shadow: var(--shadow-drop);
+  //box-shadow: var(--shadow-concave);
+  //box-shadow: var(--shadow-base);
+  //box-shadow: var(--shadow-convex-hover);
+  //box-shadow: var(--shadow-convex);
+  //box-shadow: var(--shadow-icon);
+  //box-shadow: var(--shadow-primary-concave);
+  //box-shadow: var(--danger-shadow-concave);
+  //box-shadow: var(--primary-shadow-concave);
+  //box-shadow: var(--liner-shadow-concave);
+  //box-shadow: var(--shadow-unselected-concave);
+  //box-shadow: var(--box-shadow-m);
   //inset 14px 14px 12px 0 rgba(196, 206, 218, 0.14), inset -3px -3px 5px 0 $white, inset 2px 2px 5px 0 rgba(196, 206, 218, 0.78), inset 1px 1px 16px -13px #6f8197;
 
   //box-shadow: var(--box-shadow-active);
@@ -111,9 +123,9 @@ span.toggle {
 .icon {
   z-index: 1;
   &:checked {
-    & ~ .background {
-      --bg: white;
-    }
+    //& ~ .background {
+    //  --bg: white;
+    //}
   }
 }
 </style>

@@ -97,11 +97,13 @@ $shadow-unselected-concave: 0.2rem 0.3rem 0.4rem hsla(203, 12%, 60%, 0.45) inset
 
 /* Dark Theme Colors */
 $dark-transparant: transparant;
-$dark-white: #fff;
+//$dark-white: #1c1e1f;
+$dark-white: #2a2e33;
 $dark-almost-white: #31363c;
 //20px 20px 60px #2a2e33, -20px -20px 60px #383e45;
 
 
+$dark-border:red;
 
 
 $dark-off-white:red;
@@ -123,7 +125,6 @@ $dark-text-emphasis:red;
 $dark-button-gray:red;
 $dark-unselected:red;
 $dark-disabled:red;
-$dark-border:red;
 $dark-danger:red;
 $dark-filter-gray:red;
 $dark-shadow-drop:red;
@@ -204,3 +205,16 @@ $dark-shadow-unselected-concave:red;
 //$primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem $dark-highlight;
 //$liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem $dark-highlight;
 //$shadow-unselected-concave: 0.2rem 0.3rem 0.4rem #36363666 inset, -0.2rem -0.2rem 0.3rem $dark-bg inset;
+
+
+//box-shadow: var(--shadow-drop);
+//box-shadow: var(--shadow-concave);
+//box-shadow: var(--shadow-base);
+//box-shadow: var(--shadow-convex-hover);
+//box-shadow: var(--shadow-convex);
+//box-shadow: var(--shadow-icon);
+//box-shadow: var(--shadow-primary-concave);
+//box-shadow: var(--danger-shadow-concave);
+//box-shadow: var(--primary-shadow-concave);
+//box-shadow: var(--liner-shadow-concave);
+//box-shadow: var(--shadow-unselected-concave);

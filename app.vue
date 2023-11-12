@@ -21,8 +21,8 @@ onMounted(() => {
         <NuxtPage/>
       </div>
       <Footer/>
-<!--      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'"/>-->
-      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'light' : 'light'"/>
+      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'"/>
+<!--      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'light' : 'light'"/>-->
       <!--      <div class="mouse"/>-->
     </div>
   </div>
@@ -30,6 +30,7 @@ onMounted(() => {
 
 <style lang="scss">
 div.application-container {
+  color: var(--text-main);
   background-color: var(--almost-white);
   box-sizing: border-box;
   height: 100vh;

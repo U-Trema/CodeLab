@@ -1,9 +1,11 @@
+@import 'variable';
+
 // text
-@mixin text-main {
-  color: $text-main;
-  font-size: $font-medium;
-  line-height: $single-line;
-  font-weight: medium;
+@mixin text-main($text-color) {
+    color: $text-color;
+    font-size: $font-medium;
+    line-height: $single-line;
+    font-weight: medium;
 }
 @mixin text-label {
   color: $text-main;

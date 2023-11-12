@@ -80,6 +80,15 @@ const validateEmail = (email: string) => {
       <div class="btn">
         <Button type="submit">Envoyer</Button>
       </div>
+      <div>
+        Vous n'aimez pas les formulaires ?
+        Envoyer un email à <a href="mailto:salaun.cedric@gmail.com">Cédric</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
     </form>
   </main>
 </template>
