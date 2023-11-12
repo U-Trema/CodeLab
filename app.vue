@@ -21,6 +21,7 @@ onMounted(() => {
         <NuxtPage/>
       </div>
       <Footer/>
+      
       <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'"/>
 <!--      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'light' : 'light'"/>-->
       <!--      <div class="mouse"/>-->
