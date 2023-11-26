@@ -63,9 +63,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      // EMAIL_USER: process.env.EMAIL_USER,
-      // EMAIL_PWD: process.env.EMAIL_PWD,
+      EMAIL_USER: process.env.EMAIL_USER,
+      EMAIL_PWD: process.env.EMAIL_PWD,
     }
   }
   });
-
