@@ -44,7 +44,7 @@ button.button {
   -webkit-text-size-adjust: 100%;
   align-items: stretch;
   appearance: none;
-  background-color: var(--almost-white);
+  background-color: var(--background-color);
   border-radius: $radius-2;
   border: none;
   box-sizing: border-box;
@@ -110,7 +110,7 @@ button.button {
   .icon {
     @include flex;
     align-items: center;
-    background-color: var(--almost-white);
+    background-color: var(--background-color);
     border-radius: 0.7em;
     box-shadow: 0.1em 0.1em 0.6em 0.2em var(--off-blue);
     height: 2.2em;

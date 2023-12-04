@@ -1,7 +1,9 @@
 /* Color styles */
 $transparant: transparent;
 $white: #fff;
+$huge-border: #fff;
 
+$background-color: #f1f2f6;
 $almost-white: #f1f2f6;
 $off-white: #d8dae4;
 $off-blue: #c4ceda;
@@ -55,7 +57,7 @@ $fit: 100%;
 $transition-all: all 0.25s ease-in-out;
 $long-transition-all: all 0.5s ease;
 $xtra-long-transition-all: all 1s ease;
-$transition-color: color 0.15s ease-in-out;
+$transition-color: all .15s ease-in-out;
 $transition-transform: transform 0.25s ease-in-out;
 $transition-box-shadow: box-shadow 0.18s ease;
 
@@ -94,53 +96,102 @@ $danger-shadow-concave: inset 0.1rem 0.2rem 0.3rem #c0545999;
 $primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem #55b3c099;
 $liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem #86e1dc40;
 $shadow-unselected-concave: 0.2rem 0.3rem 0.4rem hsla(203, 12%, 60%, 0.45) inset, -0.2rem -0.2rem 0.3rem #ffffff59 inset;
+$shadow-in-out: -8px -4px 8px 0px $white, 8px 4px 12px 0px $off-white, 4px 4px 4px 0px $off-white inset, -4px -4px 4px 0px $white inset;
+$shadow-line: 0 1px 0 var(--white), 0 4px 0 var(--primary);
 
 /* Dark Theme Colors */
 $dark-transparant: transparant;
+$dark-background-color: #24272C;
+$dark-box-shadow-m: -27px -16px 20px 20px rgba(0, 0, 0, 0.1), 3px 3px 10px 4px rgba(0, 0, 0, 0.15), 25px 33px 56px -4px $dark-background-color, 13px 13px 20px 0 rgba(0, 0, 0, 0.1), 0 -4px 11px 0 $dark-background-color, -10px -2px 10px 0 $dark-background-color, -5px -5px 20px 9px rgba(0, 0, 0, 0.1);
+$dark-huge-border: #24272C;
+$dark-text-main: #7F8493;
+$dark-primary: #2FB8FF;
+$dark-almost-white: #24272C;
+$dark-box-shadow-hover: 4px 4px 8px 0px rgba(0, 0, 0, 0.25), -4px -4px 8px 0px rgba(255, 255, 255, 0.25);
+$dark-box-shadow-active: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.25) inset;
+$dark-shadow-in-out: 9px 9px 20px 0px rgba(0, 0, 0, 0.30) inset, -9px -9px 20px 0px rgba(255, 255, 255, 0.04) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.04);
+$dark-shadow-drop: 6px 6px 12px rgba(0, 0, 0, 0.25), -6px -6px 12px rgba(255, 255, 255, 0.025);
+$dark-shadow-line: 0 1px 0 $dark-background-color, 0 4px 0 $dark-primary;
+$dark-shadow-concave: 2px 2px 4px 0px $dark-background-color inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.25) inset;
+$dark-shadow-input: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.25) inset;
+$dark-danger-shadow-concave: 2px 2px 4px 0px rgba(192, 84, 89, 0.01) inset, -2px -2px 4px 0px #c0545999 inset;
+$dark-primary-shadow-concave: 2px 2px 4px 0px rgba(85, 179, 192, 0.01) inset, -2px -2px 4px 0px #55b3c099 inset;
+$dark-shadow-convex: 6px 6px 12px 0px rgba(0, 0, 0, 0.25), -6px -6px 12px 0px rgba(255, 255, 255, 0.25);
+
+$dark-text-base: #7F8493;
+$dark-danger: #ed7f93;
+$dark-light: rgba(255, 255, 255, 0.175);
+$dark-light-blue:#9EECD9;
+
+
+
+//$dark-shadow-in-out: 8px 4px 8px 0px rgba(255, 255, 255, 0.30) inset, -8px -4px 12px 0px rgba(216, 218, 228, 0.04) inset, -4px -4px 4px 0px rgba(0, 0, 0, 0.30), 4px 4px 4px 0px rgba(255, 255, 255, 0.04);
+
+//$box-shadow-m: -27px -16px 20px 20px hsla(0, 0%, 100%, 0.5), 3px 3px 10px 4px rgba(162, 177, 196, 0.24), 25px 33px 56px -4px $off-white, 13px 13px 20px 0 $off-blue, 0 -4px 11px 0 $white, -10px -2px 10px 0 $white, -5px -5px 20px 9px hsla(0, 0%, 100%, 0.86);
+
+//$dark-box-shadow-m: 18px 18px 36px 0px rgba(0, 0, 0, 0.25), -18px -18px 36px 0px rgba(255, 255, 255, 0.25);
+//$dark-box-shadow-m: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+//$dark-huge-border: rgba(0, 0, 0, 0.45);
+
+
+
+
+
+
+//border-radius: 40px;
+//border: 2px solid rgba(255, 255, 255, 0.60);
+//box-shadow: 36px 40px 56px 0px rgba(0, 0, 0, 0.19);
+
+
+
 //$dark-white: #1c1e1f;
-$dark-white: #2a2e33;
-$dark-almost-white: #31363c;
+//$dark-white: #2a2e33;
+//$dark-white: rgba(255, 255, 255, 0.60);
+
+//border-radius: 40px;
+//border: 2px solid rgba(255, 255, 255, 0.60);
+//background: #24272C;
+//box-shadow: 36px 40px 56px 0px rgba(0, 0, 0, 0.19);
+//$dark-white: #24272C;
+//$dark-white: #2a2e33;
+$dark-white: red;
+//$dark-almost-white: #24272C;
 //20px 20px 60px #2a2e33, -20px -20px 60px #383e45;
 
-
-$dark-border:red;
-
+$dark-border: red; // delete ?
 
 $dark-off-white:red;
 $dark-off-blue:red;
-$dark-light-blue:red;
-$dark-box-shadow-m:red;
-$dark-box-shadow-active:red;
-$dark-box-shadow-hover:red;
+//$dark-box-shadow-m: -27px -16px 20px 20px hsla(0, 0%, 100%, 0.5), 3px 3px 10px 4px rgba(162, 177, 196, 0.24), 25px 33px 56px -4px $off-white, 13px 13px 20px 0 $off-blue, 0 -4px 11px 0 $white, -10px -2px 10px 0 $white, -5px -5px 20px 9px hsla(0, 0%, 100%, 0.86);
+//$dark-box-shadow-m: 20px 20px 60px #24272b, -20px -20px 60px #30353b;
+//$dark-box-shadow-m: 10px 10px 20px 0px rgba(0, 0, 0, 0.25), -10px -10px 20px 0px rgba(255, 255, 255, 0.25);
+//$dark-box-shadow-m: -27px -16px 20px 20px hsla(0, 0%, 100%, 0.5), 3px 3px 10px 4px rgba(162, 177, 196, 0.24), 25px 33px 56px -4px $off-white, 13px 13px 20px 0 $off-blue, 0 -4px 11px 0 $white, -10px -2px 10px 0 $white, -5px -5px 20px 9px hsla(0, 0%, 100%, 0.86);
+//$dark-box-shadow-m: -27px -16px 20px 20px hsla(0, 0%, 10%, 0.5),
+//3px 3px 10px 4px rgba(162, 177, 196, 0.24),
+//25px 33px 56px -4px #2a2e33,
+//13px 13px 20px 0 #2a2e33,
+//0 -4px 11px 0 #2a2e33,
+//-10px -2px 10px 0 #2a2e33,
+//-5px -5px 20px 9px hsla(0, 0%, 0%, 0.2);
+
 $dark-base:red;
 $dark-base-liner:red;
-$dark-primary:red;
 $dark-primary-liner:red;
 $dark-primary-liner-large:red;
 $dark-primary-liner-light:red;
-$dark-text-base:red;
-$dark-text-main:red;
 $dark-text-sub:red;
 $dark-text-emphasis:red;
 $dark-button-gray:red;
 $dark-unselected:red;
 $dark-disabled:red;
-$dark-danger:red;
 $dark-filter-gray:red;
-$dark-shadow-drop:red;
-$dark-shadow-concave:red;
 $dark-shadow-base:red;
-$dark-shadow-convex:red;
 $dark-shadow-convex-hover:red;
 $dark-shadow-convex-large:red;
 $dark-shadow-icon:red;
 $dark-shadow-primary-concave:red;
-$dark-danger-shadow-concave:red;
-$dark-primary-shadow-concave:red;
 $dark-liner-shadow-concave:red;
 $dark-shadow-unselected-concave:red;
-
-
 
 //$dark-base: #121212;
 //$dark-text-base: #ffffff;
@@ -205,7 +256,6 @@ $dark-shadow-unselected-concave:red;
 //$primary-shadow-concave: inset 0.1rem 0.2rem 0.3rem $dark-highlight;
 //$liner-shadow-concave: inset 0.1rem 0.2rem 0.2rem $dark-highlight;
 //$shadow-unselected-concave: 0.2rem 0.3rem 0.4rem #36363666 inset, -0.2rem -0.2rem 0.3rem $dark-bg inset;
-
 
 //box-shadow: var(--shadow-drop);
 //box-shadow: var(--shadow-concave);

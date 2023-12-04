@@ -1,12 +1,20 @@
 <script setup lang="ts">
-import { Box } from '#components';
+import { Box, Switch } from '#components';
 
 const route = useRoute();
+const { changeMode } = defineProps({
+  changeMode: Function,
+});
+
+const test = () => {
+  setTimeout(() => changeMode?.(), 475)
+}
 </script>
 
 <template>
   <footer>
     <nav class="nav">
+      <Switch class="switch" @mouseup="test"/>
       <NuxtLink class="box-container" to="/services">
         <Box :active="route.path === '/services'">
           Services
@@ -22,8 +30,11 @@ const route = useRoute();
 </template>
 
 <style scoped lang="scss">
+footer {
+  transition: $xtra-long-transition-all;
+}
 a {
-  transition: $transition-color;
+  //transition: $transition-color;
 
   &.active-link {
     color: var(--primary);
@@ -33,22 +44,27 @@ a {
 
 nav.nav {
   @include flex;
-  background-color: var(--almost-white);
+  background-color: var(--background-color);
   flex-direction: row;
-  gap: $spacing-1;
+  gap: $spacing-2;
   justify-content: center;
   margin-top: -$spacing-1;
-  padding-top: $spacing-2;
+  padding: $spacing-2 $spacing-4;
   position: relative;
 
   &:before {
-    background: linear-gradient(transparent, var(--almost-white) 70%);
+    background: linear-gradient(transparent, var(--background-color) 70%, var(--background-color));
     content: "";
     display: block;
     height: $spacing-4;
     position: absolute;
     top: -$spacing-4;
     width: 100%;
+  }
+
+  .switch {
+    align-self: center;
+    flex: 1;
   }
 }
 

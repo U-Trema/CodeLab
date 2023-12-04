@@ -25,11 +25,11 @@ div.image-container {
   @include flex;
   border-radius: $circle;
   border: $border-4 solid transparent;
+  box-sizing: border-box;
   height: v-bind(height);
   overflow: hidden;
   transition: $long-transition-all;
   width: v-bind(width);
-  box-sizing: border-box;
 
   &.active {
     box-shadow: var(--box-shadow-m);

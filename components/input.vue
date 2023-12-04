@@ -24,12 +24,12 @@ onMounted(() => {
 
 <style scoped lang="scss">
 div.container {
-  position: relative;
   border-radius: $radius-2;
   box-shadow: none;
   box-sizing: border-box;
   display: block;
   margin: $spacing-0 $spacing-0 $spacing-5;
+  position: relative;
   transition: $xtra-long-transition-all;
 
   &:has(> input.input:focus) {
@@ -53,8 +53,8 @@ div.container {
     border-radius: $radius-2;
     box-shadow: none;
     box-sizing: border-box;
+    color: var(--text-base);
     display: block;
-    font: inherit;
     font-size: $font-xtra-small;
     height: $spacing-7;
     line-height: $spacing-3;
@@ -70,10 +70,10 @@ div.container {
 
 
     &:focus ~ label.label {
-      transition: 0.3s;
+      opacity: 1;
       padding-left: $spacing-1;
       transform: translateY(-35px);
-      opacity: 1;
+      transition: 0.3s;
     }
   }
 

@@ -319,7 +319,7 @@ main {
       font-weight: normal;
 
       &.linkedin {
-        color: #0077b5;
+        color: var(--primary)
       }
 
       svg {
@@ -359,14 +359,14 @@ main {
       font-size: $font-maximum;
       line-height: 1;
       letter-spacing: -0.05em;
-      transition: $xtra-long-transition-all;
+      //transition: $xtra-long-transition-all;
       width: max-content;
       font-weight: bold;
       align-self: center;
 
       &.active {
         --tw-text-opacity: 1;
-        box-shadow: 0 1px 0 var(--white), 0 4px 0 var(--primary);
+        box-shadow: var(--shadow-line);
         color: var(--text-base);
         font-weight: 700;
       }

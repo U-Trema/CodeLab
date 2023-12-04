@@ -31,9 +31,11 @@ select {
 
 body {
   --transparant: #{$transparant};
+  --bg-input: #{$transparant};
   --white: #{$white};
+  --huge-border: #{$huge-border};
   --almost-white: #{$almost-white};
-  //box-shadow:  20px 20px 60px #cdced1, -20px -20px 60px #ffffff;
+  --background-color: #{$background-color};
   --off-white: #{$off-white};
   --off-blue: #{$off-blue};
   --light-blue: #{$light-blue};
@@ -57,12 +59,14 @@ body {
   --unselected: #{$unselected};
   --disabled: #{$disabled};
   --border: #{$border};
+  --huge-border: #{$huge-border};
   --danger: #{$danger};
   --filter-gray: #{$filter-gray};
 
   /* Effect styles */
   --shadow-drop: #{$shadow-drop};
   --shadow-concave: #{$shadow-concave};
+  --shadow-input: #{$shadow-concave};
   --shadow-base: #{$shadow-base};
   --shadow-convex: #{$shadow-convex};
   --shadow-convex-hover: #{$shadow-convex-hover};
@@ -73,49 +77,60 @@ body {
   --primary-shadow-concave: #{$primary-shadow-concave};
   --liner-shadow-concave: #{$liner-shadow-concave};
   --shadow-unselected-concave: #{$shadow-unselected-concave};
+  --shadow-in-out: #{$shadow-in-out};
+  --shadow-line: #{$shadow-line};
 }
 
 .dark-mode body {
-  --transparant: #{$dark-transparant};
-  --white: #{$dark-white};
-  --almost-white: #{$dark-almost-white};
-  --off-white: #{$dark-off-white};
-  --off-blue: #{$dark-off-blue};
-  --light-blue: #{$dark-light-blue};
-
-  --box-shadow-m: #{$dark-box-shadow-m};
-  --box-shadow-active: #{$dark-box-shadow-active};
-  --box-shadow-hover: #{$dark-box-shadow-hover};
 
   /* Color styles */
+  --primary: #{$dark-primary};
+  --light-blue: #{$dark-light-blue};
+  --danger: #{$dark-danger};
+  --off-blue: #{$dark-light};
+  --transparant: #{$dark-transparant};
+  --almost-white: #{$dark-almost-white};
+
+  --text-base: #{$dark-text-base};
+  --bg-input: #{$dark-background-color};
+  --huge-border: #{$dark-huge-border};
+  --text-main: #{$dark-text-main};
+  --background-color: #{$dark-background-color};
+
+  /* Effect styles */
+  --box-shadow-active: #{$dark-box-shadow-active};
+  --box-shadow-hover: #{$dark-box-shadow-hover};
+  --box-shadow-m: #{$dark-box-shadow-m};
+  --danger-shadow-concave: #{$dark-danger-shadow-concave};
+  --primary-shadow-concave: #{$dark-primary-shadow-concave};
+  --shadow-concave: #{$dark-shadow-concave};
+  --shadow-convex: #{$dark-shadow-convex};
+  --shadow-drop: #{$dark-shadow-drop};
+  --shadow-in-out: #{$dark-shadow-in-out};
+  --shadow-input: #{$dark-shadow-input};
+  --shadow-line: #{$dark-shadow-line};
+
+  --white: #{$dark-white};
+  --off-white: #{$dark-off-white};
+
   --base: #{$dark-base};
   --base-liner: #{$dark-base-liner};
-  --primary: #{$dark-primary};
   --primary-liner: #{$dark-primary-liner};
   --primary-liner-large: #{$dark-primary-liner-large};
   --primary-liner-light: #{$dark-primary-liner-light};
-  --text-base: #{$dark-text-base};
-  --text-main: #{$dark-text-main};
   --text-sub: #{$dark-text-sub};
   --text-emphasis: #{$dark-text-emphasis};
   --button-gray: #{$dark-button-gray};
   --unselected: #{$dark-unselected};
   --disabled: #{$dark-disabled};
   --border: #{$dark-border};
-  --danger: #{$dark-danger};
   --filter-gray: #{$dark-filter-gray};
 
-  /* Effect styles */
-  --shadow-drop: #{$dark-shadow-drop};
-  --shadow-concave: #{$dark-shadow-concave};
   --shadow-base: #{$dark-shadow-base};
-  --shadow-convex: #{$dark-shadow-convex};
   --shadow-convex-hover: #{$dark-shadow-convex-hover};
   --shadow-convex-large: #{$dark-shadow-convex-large};
   --shadow-icon: #{$dark-shadow-icon};
   --shadow-primary-concave: #{$dark-shadow-primary-concave};
-  --danger-shadow-concave: #{$dark-danger-shadow-concave};
-  --primary-shadow-concave: #{$dark-primary-shadow-concave};
   --liner-shadow-concave: #{$dark-liner-shadow-concave};
   --shadow-unselected-concave: #{$dark-shadow-unselected-concave};
 }

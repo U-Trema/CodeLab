@@ -4,6 +4,7 @@ import Switch from "./components/switch.vue";
 
 const isBoxShadowVisible = ref(false);
 const colorMode = useColorMode();
+const changeMode = () => colorMode.value = colorMode.value === 'light' ? 'dark' : 'light';
 
 onMounted(() => {
   setTimeout(() => {
@@ -20,25 +21,28 @@ onMounted(() => {
       <div class="content-container">
         <NuxtPage/>
       </div>
-      <Footer/>
-      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'"/>
-<!--      <Switch @mousedown="colorMode.value = colorMode.value === 'light' ? 'light' : 'light'"/>-->
-      <!--      <div class="mouse"/>-->
+      <Footer :changeMode="changeMode" />
     </div>
   </div>
 </template>
 
 <style lang="scss">
 div.application-container {
-  color: var(--text-main);
-  background-color: var(--almost-white);
+  @include flex;
+  align-items: center;
+  background-color: var(--background-color);
   box-sizing: border-box;
+  color: var(--text-main);
   height: 100vh;
+  justify-content: center;
   padding: $spacing-s $spacing-m $spacing-m;
+  transition: $xtra-long-transition-all;
+  //transition: $transition-all;
+  //transition: $transition-color;
 
   & > div.inner-container {
     @include flex;
-    background-color: var(--almost-white);
+    background-color: var(--background-color);
     border-radius: $radius-3;
     border: $border-4 solid transparent;
     box-sizing: border-box;
@@ -46,6 +50,7 @@ div.application-container {
     height: 100%;
     margin: 0 auto;
     max-width: 1000px;
+    max-height: 1000px;
     overflow: hidden;
     padding: $spacing-2;
     transition: $long-transition-all;
@@ -53,8 +58,12 @@ div.application-container {
 
     &.active {
       box-shadow: var(--box-shadow-m);
-      border-color: var(--white);
-      transition: $long-transition-all;
+      border-color: var(--huge-border);
+      //transition: $transition-all;
+
+      //transition: $transition-all;
+      //transition: $transition-color;
+
     }
 
     & > div.content-container {
@@ -63,6 +72,24 @@ div.application-container {
       flex-grow: 1;
       overflow: scroll;
       padding: $spacing-2;
+      transition: $transition-all;
+
+      //&::-webkit-scrollbar {
+      //  width: 7px; /* Largeur de la barre de défilement */
+      //  //background-color: transparent;
+      //  //background-color: var(--light-blue);
+      //}
+      //&::-webkit-scrollbar-track {
+      //  //background-color: transparent;
+      //  //background-color: var(--light-blue);
+      //}
+      ////
+      //&::-webkit-scrollbar-thumb {
+      //  background-color: var(--off-blue);
+      //  border-radius: 6px;
+      //  //background-color: transparent;
+      //
+      //}
     }
   }
 

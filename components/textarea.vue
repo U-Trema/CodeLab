@@ -28,7 +28,7 @@ div.container {
   box-shadow: none;
   margin: $spacing-0 $spacing-0 $spacing-5;
   position: relative;
-  transition: $xtra-long-transition-all;
+  //transition: $xtra-long-transition-all;
 
   &:has(> textarea.textarea:focus) {
     box-shadow: var(--box-shadow-active);
@@ -42,10 +42,11 @@ div.container {
     background-color: var(--transparant);
     border-radius: $radius-2;
     box-sizing: border-box;
+    color: var(--text-base);
     font: inherit;
     line-height: $spacing-3;
     padding: $spacing-2;
-    transition: $xtra-long-transition-all;
+    //transition: $xtra-long-transition-all;
     vertical-align: middle;
     width: 100%;
 
@@ -53,7 +54,7 @@ div.container {
       opacity: 1;
       padding-left: 2px;
       transform: translateY(-35px);
-      transition: 0.3s;
+      //transition: 0.3s;
     }
   }
 
@@ -65,7 +66,7 @@ div.container {
     pointer-events: none;
     position: absolute;
     top: $spacing-3;
-    transition: $xtra-long-transition-all;
+    //transition: $xtra-long-transition-all;
   }
 }
 </style>

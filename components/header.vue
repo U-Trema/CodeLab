@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Box } from '#components';
 import { Home } from 'lucide-vue-next';
+import { Box } from '#components';
 
 const route = useRoute();
 
@@ -29,41 +29,53 @@ const developers = [
 </template>
 
 <style scoped lang="scss">
-a {
-  transition: $transition-color;
-
-  &.active-link {
-    color: var(--primary);
-    transition: $transition-color;
-  }
-}
-
 header {
-  background-color: var(--almost-white);
-}
+  background-color: var(--background-color);
+  transition: $xtra-long-transition-all;
 
-nav.nav {
-  @include flex;
+  //transition: $xtra-long-transition-all;
 
-  justify-content: flex-end;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: $spacing-2;
-  position: relative;
-  padding-bottom: $spacing-2;
+  //transition: $transition-color;
+  //transition: $transition-all;
 
-  &:before {
-    background: linear-gradient(var(--almost-white), transparent 70%);
-    content: "";
-    display: block;
-    height: $spacing-4;
-    position: absolute;
-    bottom: -$spacing-4;
-    width: 100%;
+
+  a {
+    //transition: $transition-color;
+
+    &.active-link {
+      color: var(--primary);
+      //transition: $transition-color;
+    }
   }
 
-  .home {
-    flex-grow: 1;
+  nav.nav {
+    @include flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: $spacing-2;
+    position: relative;
+    padding: $spacing-2 $spacing-4;
+    //transition: $transition-color;
+
+    &:before {
+      background: linear-gradient(var(--background-color), transparent 70%, transparent);
+      bottom: -$spacing-4;
+      content: "";
+      display: block;
+      height: $spacing-4;
+      left: 0;
+      position: absolute;
+      //transition: $transition-color;
+      //transition: $transition-all;
+
+      //transition: $xtra-long-transition-all;
+      width: 100%;
+    }
+
+    .home {
+      flex-grow: 1;
+    }
   }
 }
 

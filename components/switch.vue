@@ -29,8 +29,7 @@ span.toggle {
   width: $spacing-9;
   border-radius: $radius-4;
   overflow: hidden;
-  box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px var(--off-white), 4px 4px 4px 0px var(--off-white) inset, -4px -4px 4px 0px var(--white) inset;
-  //box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  box-shadow: var(--shadow-in-out);
 }
 
 input.toggle-state {
@@ -38,33 +37,14 @@ input.toggle-state {
 }
 
 span.indicator {
-  height: 100%;
-  width: 200%;
   background: var(--almost-white);
-  //background: #ecf0f3;
   border-radius: 15px;
+  box-shadow: var(--shadow-drop);
+  height: 100%;
+  position: relative;
   transform: translate3d(-75%, 0, 0);
   transition: transform .45s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  //box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px #d1d9e6;
-  box-shadow: -8px -4px 8px 0px var(--white), 8px 4px 12px 0px var(--off-white);
-  box-shadow: var(--shadow-drop);
-  //box-shadow: var(--shadow-concave);
-  //box-shadow: var(--shadow-base);
-  //box-shadow: var(--shadow-convex-hover);
-  //box-shadow: var(--shadow-convex);
-  //box-shadow: var(--shadow-icon);
-  //box-shadow: var(--shadow-primary-concave);
-  //box-shadow: var(--danger-shadow-concave);
-  //box-shadow: var(--primary-shadow-concave);
-  //box-shadow: var(--liner-shadow-concave);
-  //box-shadow: var(--shadow-unselected-concave);
-  //box-shadow: var(--box-shadow-m);
-  //inset 14px 14px 12px 0 rgba(196, 206, 218, 0.14), inset -3px -3px 5px 0 $white, inset 2px 2px 5px 0 rgba(196, 206, 218, 0.78), inset 1px 1px 16px -13px #6f8197;
-
-  //box-shadow: var(--box-shadow-active);
-  //box-shadow: var(--box-shadow-m);
-
-  position: relative;
+  width: 200%;
 }
 
 .toggle-state:checked ~ .indicator {
@@ -79,26 +59,24 @@ span.indicator {
 
 
 .icon {
-  position: absolute;
-  left: 80%;
-  top: 7px;
-
   appearance: none;
-  outline: none;
+  border-radius: 999px;
+  color: hsl(40deg 97.78% 67.55%);
   cursor: pointer;
+  left: 81%;
+  outline: none;
+  position: absolute;
+  top: 8px;
+  transform: scale(0.75);
+  transition: all .45s cubic-bezier(0.85, 0.05, 0.18, 1.29);
 
+  --offset-diagonal: calc(var(--size) * 0.45);
+  --offset-orthogonal: calc(var(--size) * 0.65);
+  --ray-size: calc(var(--size) * -0.4);
   --size: 16px;
+
   width: var(--size);
   height: var(--size);
-  border-radius: 999px;
-  transition: all .45s cubic-bezier(0.85, 0.05, 0.18, 1.29);
-  --ray-size: calc(var(--size) * -0.4);
-  --offset-orthogonal: calc(var(--size) * 0.65);
-  --offset-diagonal: calc(var(--size) * 0.45);
-
-  transform: scale(0.75);
-  //color: hsl(40, 100%, 50%);
-  color: hsl(40deg 97.78% 67.55%);
   box-shadow:
       inset 0 0 0 var(--size),
       calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
@@ -112,20 +90,10 @@ span.indicator {
 }
 
 .background {
-  --bg: hsl(240, 100%, 10%);
-  background: var(--bg);
-  position: fixed;
+  background: var(--background-color);
   height: 100vh;
-  width: 100vw;
+  position: fixed;
   transition: background 500ms;
-}
-
-.icon {
-  z-index: 1;
-  &:checked {
-    //& ~ .background {
-    //  --bg: white;
-    //}
-  }
+  width: 100vw;
 }
 </style>

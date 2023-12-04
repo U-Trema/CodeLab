@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 const isTitleVisible = ref(false);
 
@@ -13,55 +13,53 @@ onMounted(() => {
 <template>
   <main class="container">
     <div>
-      <h2 :class="{ active: isTitleVisible }">GESTION DE PROJETS WEB</h2>
-      <p>Notre équipe de développeurs expérimentés prend en charge la gestion complète de votre projet web. Du concept à
-        la réalisation, nous assurons une planification efficace, un suivi rigoureux et une livraison de qualité.</p>
+      <h2 :class="{ active: isTitleVisible }">EXPERTISE EN GESTION DE PROJETS WEB</h2>
+      <p>Laissez-nous concrétiser votre vision en ligne. Notre équipe expérimentée de développeurs excelle dans la gestion intégrale de projets web.
+        De la conception initiale à la réalisation finale, nous vous garantissons une planification minutieuse, un suivi attentif et une livraison
+        impeccable.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">INTÉGRATION WEB</h2>
-      <p>L'intégration web est l'âme de votre site. Nous veillons à ce que votre design se traduise parfaitement en
-        code, offrant une expérience utilisateur fluide sur tous les appareils et navigateurs.</p>
+      <h2 :class="{ active: isTitleVisible }">INTÉGRATION WEB PERFECTIONNÉE</h2>
+      <p>L'essence même de votre site se traduit dans notre expertise en intégration web. Chaque pixel de votre design est méticuleusement transformé
+        en code, offrant une expérience utilisateur transparente et immersive, quel que soit l'appareil ou le navigateur utilisé.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">DÉVELOPPEMENTS SPÉCIFIQUES</h2>
-      <p>Besoin de fonctionnalités personnalisées ? Nos développeurs sont prêts à concevoir des solutions spécifiques
-        pour répondre à vos besoins uniques, garantissant ainsi une expérience utilisateur exceptionnelle.</p>
+      <h2 :class="{ active: isTitleVisible }">DÉVELOPPEMENTS SUR-MESURE</h2>
+      <p>Cherchez-vous des fonctionnalités exclusives ? Nos développeurs talentueux sont prêts à concevoir des solutions sur-mesure pour répondre
+        précisément à vos besoins, assurant ainsi une expérience utilisateur inégalée.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">RÉFÉRENCEMENT NATUREL</h2>
-      <p>Maximisez votre visibilité en ligne avec notre expertise en référencement naturel. Nous optimisons votre site
-        pour les moteurs de recherche, vous aidant à atteindre un public plus large et à renforcer votre présence en
-        ligne.</p>
+      <h2 :class="{ active: isTitleVisible }">OPTIMISATION POUR UNE VISIBILITÉ MAXIMALE</h2>
+      <p>Faites briller votre présence en ligne grâce à notre expertise en référencement naturel. Nous optimisons votre site pour les moteurs de
+        recherche, vous permettant d'atteindre un public plus vaste et de consolider votre positionnement en ligne.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">CONCEPTION GRAPHIQUE & WEBDESIGN</h2>
-      <p>L'esthétique de votre site est cruciale. Nous combinons une conception graphique créative avec un webdesign
-        intuitif pour créer une identité visuelle unique et mémorable pour votre entreprise.</p>
+      <h2 :class="{ active: isTitleVisible }">CRÉATIVITÉ GRAPHIQUE ET WEBDESIGN</h2>
+      <p>L'esthétique est au cœur de notre approche. Nous unissons créativité graphique et webdesign intuitif pour façonner une identité visuelle
+        distinctive et mémorable pour votre entreprise.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">DYNAMISME DES PAGES</h2>
-      <p>Nos développeurs s'efforcent de rendre votre site web dynamique et interactif. Des animations subtiles aux
-        fonctionnalités avancées, nous insufflons de la vie à vos pages pour captiver votre public.</p>
+      <h2 :class="{ active: isTitleVisible }">DYNAMISME ET INTERACTIVITÉ</h2>
+      <p>De l'éclat subtil des animations aux fonctionnalités avancées, nos développeurs insufflent de la vie à vos pages pour captiver et engager
+        votre audience de manière exceptionnelle.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">INTERFACE D'ADMINISTRATION</h2>
-      <p>Simplifiez la gestion de votre site avec une interface d'administration conviviale. Nous créons des panneaux de
-        contrôle sur mesure pour vous permettre de gérer facilement le contenu de votre site, sans tracas.</p>
+      <h2 :class="{ active: isTitleVisible }">GESTION SIMPLIFIÉE VIA UNE INTERFACE INTUITIVE</h2>
+      <p>Facilitez la gestion de votre site grâce à une interface d'administration conviviale et personnalisée. Nous créons des panneaux de contrôle
+        sur mesure pour que la gestion de votre contenu soit un jeu d'enfant.</p>
     </div>
 
     <div>
-      <h2 :class="{ active: isTitleVisible }">RESPONSIVE DESIGN</h2>
-      <p>Votre site doit s'adapter à tous les écrans, que ce soit un ordinateur de bureau, une tablette ou un
-        smartphone. Notre approche de conception responsive garantit une expérience utilisateur optimale sur tous les
-        appareils.</p>
+      <h2 :class="{ active: isTitleVisible }">ADAPTABILITÉ SUR TOUS LES APPAREILS</h2>
+      <p>Votre site doit être fluide sur tous les écrans. Notre approche de conception responsive garantit une expérience utilisateur optimale, que ce
+        soit sur un ordinateur de bureau, une tablette ou un smartphone.</p>
     </div>
-
   </main>
 </template>
 
@@ -83,12 +81,12 @@ main.container {
     letter-spacing: .1em;
     margin-bottom: $spacing-2;
     padding-bottom: -1px;
-    transition: $xtra-long-transition-all;
+    //transition: $xtra-long-transition-all;
     width: max-content;
 
     &.active {
       --tw-text-opacity: 1;
-      box-shadow: 0 1px 0 var(--white), 0 4px 0 var(--primary);
+      box-shadow: var(--shadow-line);
       color: var(--text-base);
       font-weight: 700;
     }

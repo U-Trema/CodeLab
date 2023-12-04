@@ -80,14 +80,9 @@ const validateEmail = (email: string) => {
       <div class="btn">
         <Button type="submit">Envoyer</Button>
       </div>
-      <div>
-        Vous n'aimez pas les formulaires ?
-        Envoyer un email à <a href="mailto:salaun.cedric@gmail.com">Cédric</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      <div class="direct-email">
+        <span>Vous n'aimez pas les formulaires ?</span>
+        <span>Envoyer directement un email à <a href="mailto:salaun.cedric@gmail.com">Cédric</a></span>
       </div>
     </form>
   </main>
@@ -107,12 +102,12 @@ main.container {
     letter-spacing: -0.05em;
     margin-bottom: $spacing-2;
     text-align: center;
-    transition: $xtra-long-transition-all;
+    //transition: $xtra-long-transition-all;
     width: max-content;
 
     &.active {
       --tw-text-opacity: 1;
-      box-shadow: 0 1px 0 var(--white), 0 4px 0 var(--primary);
+      box-shadow: var(--shadow-line);
       color: var(--text-base);
       font-weight: 700;
     }
@@ -140,6 +135,20 @@ main.container {
     }
     button.captcha-btn {
       flex: 1;
+    }
+  }
+
+  div.direct-email {
+    margin: $spacing-5 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    span {
+      margin: $spacing-1;
+    }
+    a {
+      color: var(--primary);
     }
   }
 }

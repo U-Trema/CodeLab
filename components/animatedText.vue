@@ -98,7 +98,7 @@ const update = () => {
 </script>
 
 <style lang="scss">
-.temp-char {
+span.temp-char {
   color: var(--light-blue);
 }
 </style>
