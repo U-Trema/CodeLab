@@ -57,5 +57,10 @@ div.image-container {
     width: 100%;
     border-radius: $circle;
   }
+  @media screen and (max-width: 768px) {
+    &.active {
+      box-shadow: var(--box-shadow-s);
+    }
+  }
 }
 </style>

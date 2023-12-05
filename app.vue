@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 import Switch from "./components/switch.vue";
 
 const isBoxShadowVisible = ref(false);
 const colorMode = useColorMode();
-const changeMode = () => colorMode.value = colorMode.value === 'light' ? 'dark' : 'light';
+const changeMode = () => colorMode.value = colorMode.value === "light" ? "dark" : "light";
 
 onMounted(() => {
   setTimeout(() => {
@@ -21,7 +21,7 @@ onMounted(() => {
       <div class="content-container">
         <NuxtPage/>
       </div>
-      <Footer :changeMode="changeMode" />
+      <Footer :changeMode="changeMode"/>
     </div>
   </div>
 </template>
@@ -43,14 +43,14 @@ div.application-container {
 
   & > div.inner-container {
     @include flex;
+    aspect-ratio: 1;
     background-color: var(--background-color);
     border-radius: $radius-3;
     border: $border-4 solid transparent;
     box-sizing: border-box;
     flex-direction: column;
-    aspect-ratio: 1;
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 80vh;
     overflow: hidden;
     padding: $spacing-2;
     transition: $long-transition-all;
@@ -70,6 +70,7 @@ div.application-container {
       @include flex;
       flex-direction: column;
       flex-grow: 1;
+      overflow: hidden;
       padding: $spacing-2;
       transition: $transition-all;
 
@@ -105,8 +106,11 @@ div.application-container {
   }
 
   @media screen and (max-width: 768px) {
-      padding: $spacing-5;
-      &> div.inner-container {}
+    padding: $spacing-5;
+    & > div.inner-container {
+      aspect-ratio: 2/3;
+      max-height: 90vh;
+    }
   }
   //@supports (pointer-events:none) {
   //  @media screen and (pointer: fine) {

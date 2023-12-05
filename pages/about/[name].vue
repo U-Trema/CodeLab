@@ -44,8 +44,6 @@ const doSomethingOnLoad = () => {
                 :src="`/images/${dev.image}`"
                 :placeholder="[30,20,10]"
                 loading="lazy"
-                width="150px"
-                height="150px"
                 @load="doSomethingOnLoad"
             />
             <h1 id="name" :class="{ active: isTitleVisible }">
@@ -61,7 +59,8 @@ const doSomethingOnLoad = () => {
         L'histoire passionnante de deux amis d'enfances au parcours atypique prend forme avec éclat.
         <br>
         <br>
-        Notre passion commune pour la culture du web et l'entreprenariat a été le moteur pour unir nos forces et nos compétences au service de nos clients.
+        Notre passion commune pour la culture du web et l'entreprenariat a été le moteur pour unir nos forces et nos compétences au service de nos
+        clients.
       </div>
       </body>
     </article>
@@ -94,33 +93,6 @@ main {
       flex-direction: column;
     }
 
-    a {
-      color: var(--text-base);
-      display: inline-block;
-      font-weight: normal;
-      padding: $spacing-1;
-      &:hover {
-        svg {
-          transition: $transition-box-shadow;
-          box-shadow: var(--shadow-drop);
-          path { fill: #0A66C2; }
-        }
-      }
-
-      &.linkedin {
-        color: var(--primary);
-        margin: auto;
-      }
-
-      svg {
-        display: inline-block;
-
-        path {
-          fill: currentColor;
-        }
-      }
-    }
-
     h1#name {
       margin-top: $spacing-2;
       margin-bottom: $spacing-2;
@@ -142,6 +114,8 @@ main {
 
     div#picture {
       margin: 0 auto;
+      height: 150px;
+      width: 150px;
     }
 
     p {
@@ -163,8 +137,23 @@ main {
   }
 
   @media screen and (max-width: 768px) {
-    //flex-direction: column;
-
+    overflow-y: scroll;
+      div#main {
+      flex-direction: column;
+    }
+    article {
+      div#prez {
+        gap: $spacing-8;
+        padding: $spacing-3;
+        justify-content: center;
+        flex-direction: row-reverse;
+      }
+      div#picture {
+        margin: unset;
+        height: 100px;
+        width: 100px;
+      }
+    }
   }
 }
 </style>
