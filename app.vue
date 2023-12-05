@@ -37,6 +37,7 @@ div.application-container {
   justify-content: center;
   padding: $spacing-s $spacing-m $spacing-m;
   transition: $xtra-long-transition-all;
+  overflow: hidden;
   //transition: $transition-all;
   //transition: $transition-color;
 
@@ -47,10 +48,9 @@ div.application-container {
     border: $border-4 solid transparent;
     box-sizing: border-box;
     flex-direction: column;
-    height: 100%;
+    aspect-ratio: 1;
     margin: 0 auto;
-    max-width: 1000px;
-    max-height: 1000px;
+    max-width: 850px;
     overflow: hidden;
     padding: $spacing-2;
     transition: $long-transition-all;
@@ -70,7 +70,6 @@ div.application-container {
       @include flex;
       flex-direction: column;
       flex-grow: 1;
-      overflow: scroll;
       padding: $spacing-2;
       transition: $transition-all;
 
@@ -105,6 +104,10 @@ div.application-container {
     filter: $blur-l;
   }
 
+  @media screen and (max-width: 768px) {
+      padding: $spacing-5;
+      &> div.inner-container {}
+  }
   //@supports (pointer-events:none) {
   //  @media screen and (pointer: fine) {
   //    transform: translate3d(calc(1088.99px - 50%), calc(627.007px - 50%), 0px);

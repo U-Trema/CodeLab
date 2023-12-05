@@ -19,9 +19,19 @@ const developers = [
           <Home :size="20" class="home-icon"/>
         </Box>
       </NuxtLink>
-      <NuxtLink v-for="dev in developers" class="box-container" :to="`/about/${dev.name}`">
-        <Box :active="route.path === `/about/${dev.name}`">
-          {{ dev.name }}
+      <NuxtLink class="box-container" :to="`/about/team`">
+        <Box :active="route.path === `/about/team`">
+          Team
+        </Box>
+      </NuxtLink>
+      <NuxtLink class="box-container" to="/services">
+        <Box :active="route.path === '/services'">
+          Services
+        </Box>
+      </NuxtLink>
+      <NuxtLink class="box-container" to="/contact">
+        <Box :active="route.path === '/contact'">
+          Nous contacter
         </Box>
       </NuxtLink>
     </nav>

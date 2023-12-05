@@ -15,16 +15,16 @@ const test = () => {
   <footer>
     <nav class="nav">
       <Switch class="switch" @mouseup="test"/>
-      <NuxtLink class="box-container" to="/services">
-        <Box :active="route.path === '/services'">
-          Services
-        </Box>
-      </NuxtLink>
-      <NuxtLink class="box-container" to="/contact">
-        <Box :active="route.path === '/contact'">
-          Nous contacter
-        </Box>
-      </NuxtLink>
+<!--      <NuxtLink class="box-container" to="/services">-->
+<!--        <Box :active="route.path === '/services'">-->
+<!--          Services-->
+<!--        </Box>-->
+<!--      </NuxtLink>-->
+<!--      <NuxtLink class="box-container" to="/contact">-->
+<!--        <Box :active="route.path === '/contact'">-->
+<!--          Nous contacter-->
+<!--        </Box>-->
+<!--      </NuxtLink>-->
     </nav>
   </footer>
 </template>

@@ -5,9 +5,9 @@
 </template>
 
 <script setup>
-import {ref, onMounted, onBeforeUnmount} from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-import {generateCharacterList, randomChar} from "~/utils/text.utils.ts";
+import { generateCharacterList, randomChar } from "~/utils/text.utils.ts";
 
 onMounted(async () => {
   await next();
@@ -56,7 +56,7 @@ const setText = (newText) => {
     const to = newText[i] || '';
     const start = Math.floor(Math.random() * 50);
     const end = start + Math.floor(Math.random() * 35);
-    queue.push({from, to, start, end});
+    queue.push({ from, to, start, end });
   }
 
   cancelAnimationFrame(frameRequest);
@@ -70,7 +70,7 @@ const update = () => {
   let complete = 0;
 
   for (let i = 0, n = queue.length; i < n; i++) {
-    let {from, to, start, end, char} = queue[i];
+    let { from, to, start, end, char } = queue[i];
 
     if (frame >= end) {
       complete++;
@@ -98,6 +98,11 @@ const update = () => {
 </script>
 
 <style lang="scss">
+@media screen and (max-width: 768px) {
+  div#output-Container {
+    font-size: $font-large;
+  }
+}
 span.temp-char {
   color: var(--light-blue);
 }
