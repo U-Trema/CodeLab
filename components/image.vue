@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue';
 
 const { width, height } = defineProps({ width: String, height: String });
 const isBoxShadowVisible = ref(false);
+const isImageLoaded = ref(false);
 
 onMounted(() => {
   setTimeout(() => {
@@ -10,12 +11,16 @@ onMounted(() => {
   }, 1000);
 });
 
+const handleImageLoad = () => {
+  isImageLoaded.value = true;
+};
+
 </script>
 
 <template>
-  <div class="image-container" :class="{ active: isBoxShadowVisible }">
+  <div class="image-container" :class="{ active: isBoxShadowVisible, isImageLoaded }">
     <div class="inner-container">
-      <NuxtImg class="image" v-bind="$attrs"/>
+      <NuxtImg class="image" v-bind="$attrs" @load="handleImageLoad"/>
     </div>
   </div>
 </template>
@@ -30,6 +35,14 @@ div.image-container {
   overflow: hidden;
   transition: $long-transition-all;
   width: v-bind(width);
+  &:not(.isImageLoaded) .inner-container {
+    opacity: 0;
+    transition: $transition-all;
+  }
+
+  &.isImageLoaded .inner-container {
+    opacity: 1;
+  }
 
   &.active {
     box-shadow: var(--box-shadow-m);
