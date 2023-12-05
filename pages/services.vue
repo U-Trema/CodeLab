@@ -39,8 +39,6 @@ main.container {
   flex: 1;
   gap: $spacing-6;
   margin-top: $spacing-2;
-  //margin: $spacing-2 auto 0;
-  //padding: $spacing-2 0 $spacing-6;
 
   h2 {
     font-weight: bold;
@@ -48,9 +46,9 @@ main.container {
     margin-bottom: $spacing-0;
     padding-bottom: -1px;
     transition: $xtra-long-transition-all;
-    //width: max-content;
     font-size: $font-small;
     flex: 1;
+    text-decoration: underline var(--background-color);
 
     &.active {
       --tw-text-opacity: 1;
