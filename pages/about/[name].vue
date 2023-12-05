@@ -10,7 +10,7 @@ const developers = {
     linkedin: 'https://www.linkedin.com/in/masis-gulmez/',
     name: 'Masis',
     lastName: 'Gulmez',
-    image: 'masis.jpeg',
+    image: 'masis.JPG',
   },
   Cedric: {
     linkedin: 'https://www.linkedin.com/in/cedric-salaun/',
