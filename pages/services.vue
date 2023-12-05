@@ -51,21 +51,20 @@ main.container {
     font-weight: bold;
     letter-spacing: .1em;
     margin-bottom: $spacing-0;
-    padding-bottom: -1px;
+    padding-bottom: $spacing-0;
     transition: $xtra-long-transition-all;
     font-size: $font-small;
-    text-underline-offset: $spacing-0;
-    text-decoration: underline var(--background-color);
+    border-bottom: 2px solid var(--background-color);
+    width: fit-content;
+
 
     &.active {
       --tw-text-opacity: 1;
-      text-underline-offset: $spacing-1;
-      text-decoration: underline var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: $spacing-05;
+      margin-bottom: -1px;
       color: var(--text-base);
       font-weight: 700;
-    }
-    &::before {
-      content: '-';
     }
   }
 
@@ -76,6 +75,9 @@ main.container {
 
   h2 {
     margin-left: $spacing-2;
+    &::before {
+      content: '-';
+    }
   }
 
   @media screen and (max-width: 768px) {

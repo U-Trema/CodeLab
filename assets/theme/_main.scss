@@ -154,4 +154,6 @@ body {
     background-color: var(--background-color);
     color: var(--background-color);
   }
+  overflow: hidden;
+  max-height: 100vh;
 }

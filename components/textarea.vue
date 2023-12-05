@@ -28,7 +28,7 @@ div.container {
   box-shadow: none;
   margin: $spacing-0 $spacing-0 $spacing-5;
   position: relative;
-  //transition: $xtra-long-transition-all;
+  transition: $xtra-long-transition-all;
 
   &:has(> textarea.textarea:focus) {
     box-shadow: var(--box-shadow-active);
@@ -46,7 +46,7 @@ div.container {
     font: inherit;
     line-height: $spacing-3;
     padding: $spacing-2;
-    //transition: $xtra-long-transition-all;
+    transition: $xtra-long-transition-all;
     vertical-align: middle;
     width: 100%;
 

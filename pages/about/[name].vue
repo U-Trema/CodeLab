@@ -102,13 +102,14 @@ main {
       width: max-content;
       font-weight: bold;
       align-self: center;
-      text-underline-offset: $spacing-0;
-      text-decoration: underline var(--background-color);
+      padding-bottom: $spacing-0;
+      border-bottom: 2px solid var(--background-color);
 
       &.active {
         --tw-text-opacity: 1;
-        text-underline-offset: $spacing-1;
-        text-decoration: underline var(--primary);
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: $spacing-05;
+        margin-bottom: calc($spacing-2 - $spacing-05);
         color: var(--text-base);
         font-weight: 700;
       }

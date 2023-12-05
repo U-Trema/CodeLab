@@ -12,6 +12,22 @@ onMounted(() => {
   }, 1000);
 });
 
+useHead({
+  title: "UTrema",
+  meta: [
+    {name: "description", content: "UTrema - Présentation des Experts en Développement"},
+    {name: "image", content: "/images/ogImage.png"},
+    {name: "url", content: "https://utrema.fr"},
+  ],
+});
+useSeoMeta({
+  title: "ÜTrema",
+  ogTitle: "ÜTrema",
+  description: "UTrema - Présentation des Experts en Développement",
+  ogDescription: "UTrema - Présentation des Experts en Développement",
+  ogImage: "/images/ogImage.png",
+});
+
 </script>
 
 <template>
@@ -38,8 +54,6 @@ div.application-container {
   padding: $spacing-s $spacing-m $spacing-m;
   transition: $xtra-long-transition-all;
   overflow: hidden;
-  //transition: $transition-all;
-  //transition: $transition-color;
 
   & > div.inner-container {
     @include flex;
@@ -51,6 +65,7 @@ div.application-container {
     flex-direction: column;
     margin: 0 auto;
     max-width: 80vh;
+    max-height: 80vh;
     overflow: hidden;
     padding: $spacing-2;
     transition: $long-transition-all;
@@ -59,11 +74,6 @@ div.application-container {
     &.active {
       box-shadow: var(--box-shadow-m);
       border-color: var(--huge-border);
-      //transition: $transition-all;
-
-      //transition: $transition-all;
-      //transition: $transition-color;
-
     }
 
     & > div.content-container {
@@ -73,23 +83,6 @@ div.application-container {
       overflow: hidden;
       padding: $spacing-2;
       transition: $transition-all;
-
-      //&::-webkit-scrollbar {
-      //  width: 7px; /* Largeur de la barre de défilement */
-      //  //background-color: transparent;
-      //  //background-color: var(--light-blue);
-      //}
-      //&::-webkit-scrollbar-track {
-      //  //background-color: transparent;
-      //  //background-color: var(--light-blue);
-      //}
-      ////
-      //&::-webkit-scrollbar-thumb {
-      //  background-color: var(--off-blue);
-      //  border-radius: 6px;
-      //  //background-color: transparent;
-      //
-      //}
     }
   }
 

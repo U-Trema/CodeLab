@@ -100,8 +100,10 @@ div.container {
 @media screen and (max-width: 768px) {
   div.container {
     input.input {
+      height: $spacing-6;
+      line-height: $spacing-2;
       &:focus ~ label.label {
-        transform: translateY(-25px);
+        transform: translateY(-20px);
       }
     }
   }

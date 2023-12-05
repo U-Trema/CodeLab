@@ -47,13 +47,26 @@ const submitForm = () => {
       subject: 'UTREMA Demande de Contact',
       text: `You have a message from your Website Contact Form Name: ${ form.name }`,
       html: renderEmail(form),
-    })
+    });
+    resetForm();
   }
 }
 
 const validateEmail = (email: string) => {
   const EMAIL_REGEXP = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
   return EMAIL_REGEXP.test(email);
+}
+
+const resetForm = () => {
+  Object.keys(form).forEach(key => {
+    form[key as keyof typeof form] = '';
+  });
+
+   Object.keys(errors).forEach(key => {
+    errors[key as keyof typeof errors] = '';
+  });
+
+   generateNewCaptcha();
 }
 </script>
 
@@ -94,23 +107,24 @@ main.container {
   align-items: center;
   flex-direction: column;
   flex: 1;
-  gap: $spacing-3;
+  gap: $spacing-2;
 
   h1 {
     font-size: $font-xtra-xtra-large;
     font-weight: bold;
     letter-spacing: -0.05em;
     margin-bottom: $spacing-2;
+    padding-bottom: $spacing-0;
     text-align: center;
     transition: $xtra-long-transition-all;
     width: max-content;
-    text-underline-offset: $spacing-0;
-    text-decoration: underline var(--background-color);
+    border-bottom: 2px solid var(--background-color);
 
     &.active {
       --tw-text-opacity: 1;
-      text-underline-offset: $spacing-1;
-      text-decoration: underline var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: $spacing-05;
+      margin-bottom: calc($spacing-2 - $spacing-05);
       color: var(--text-base);
       font-weight: 700;
     }
@@ -146,13 +160,13 @@ main.container {
   }
 
   div.direct-email {
-    margin: $spacing-5 0;
+    margin: $spacing-2 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: left;
     span {
-      margin: $spacing-1;
+      margin: $spacing-05;
     }
     a {
       color: var(--primary);

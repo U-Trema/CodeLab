@@ -101,7 +101,7 @@ const update = () => {
 <style lang="scss">
 @media screen and (max-width: 768px) {
   div#output-Container {
-    font-size: $font-large;
+    font-size: $font-xtra-large;
   }
 }
 span.temp-char {
