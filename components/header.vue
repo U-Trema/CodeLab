@@ -31,7 +31,7 @@ const developers = [
       </NuxtLink>
       <NuxtLink class="box-container" to="/contact">
         <Box :active="route.path === '/contact'">
-          Nous contacter
+          Contact
         </Box>
       </NuxtLink>
     </nav>

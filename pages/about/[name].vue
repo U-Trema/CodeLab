@@ -56,11 +56,10 @@ const doSomethingOnLoad = () => {
     <article>
       <body>
       <div id="description">
-        L'histoire passionnante de deux amis d'enfances au parcours atypique prend forme avec éclat.
+        L'histoire passionnante de deux amis d'enfance au parcours atypique prend forme avec éclat.
         <br>
         <br>
-        Notre passion commune pour la culture du web et l'entreprenariat a été le moteur pour unir nos forces et nos compétences au service de nos
-        clients.
+        Notre passion commune pour la culture du web et l'entrepreneuriat a été le moteur qui nous a poussés à unir nos forces et nos compétences au service de nos clients.
       </div>
       </body>
     </article>
@@ -103,10 +102,13 @@ main {
       width: max-content;
       font-weight: bold;
       align-self: center;
+      text-underline-offset: $spacing-0;
+      text-decoration: underline var(--background-color);
 
       &.active {
         --tw-text-opacity: 1;
-        box-shadow: var(--shadow-line);
+        text-underline-offset: $spacing-1;
+        text-decoration: underline var(--primary);
         color: var(--text-base);
         font-weight: 700;
       }

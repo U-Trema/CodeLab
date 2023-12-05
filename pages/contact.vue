@@ -60,7 +60,7 @@ const validateEmail = (email: string) => {
 
 <template>
   <main class="container">
-    <h1 :class="{ active: isTitleVisible }">Nous contacter</h1>
+    <h1 :class="{ active: isTitleVisible }">Contact</h1>
     <form @submit.prevent="submitForm">
       <Input v-model="form.name" type="text" name="name" placeholder="Nom / Prénom" label="Nom / Prénom"
              maxlength="50"/>
@@ -102,12 +102,15 @@ main.container {
     letter-spacing: -0.05em;
     margin-bottom: $spacing-2;
     text-align: center;
-    //transition: $xtra-long-transition-all;
+    transition: $xtra-long-transition-all;
     width: max-content;
+    text-underline-offset: $spacing-0;
+    text-decoration: underline var(--background-color);
 
     &.active {
       --tw-text-opacity: 1;
-      box-shadow: var(--shadow-line);
+      text-underline-offset: $spacing-1;
+      text-decoration: underline var(--primary);
       color: var(--text-base);
       font-weight: 700;
     }

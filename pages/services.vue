@@ -54,13 +54,13 @@ main.container {
     padding-bottom: -1px;
     transition: $xtra-long-transition-all;
     font-size: $font-small;
-    //flex: 1;
+    text-underline-offset: $spacing-0;
     text-decoration: underline var(--background-color);
 
     &.active {
       --tw-text-opacity: 1;
-      text-decoration: underline var(--primary);
       text-underline-offset: $spacing-1;
+      text-decoration: underline var(--primary);
       color: var(--text-base);
       font-weight: 700;
     }
