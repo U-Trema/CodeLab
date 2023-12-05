@@ -96,4 +96,14 @@ div.container {
     position: absolute;
   }
 }
+
+@media screen and (max-width: 768px) {
+  div.container {
+    input.input {
+      &:focus ~ label.label {
+        transform: translateY(-25px);
+      }
+    }
+  }
+}
 </style>

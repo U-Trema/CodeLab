@@ -97,7 +97,7 @@ main.container {
   gap: $spacing-3;
 
   h1 {
-    font-size: $font-maximum;
+    font-size: $font-xtra-xtra-large;
     font-weight: bold;
     letter-spacing: -0.05em;
     margin-bottom: $spacing-2;
@@ -116,6 +116,10 @@ main.container {
   form {
     margin: 0 auto;
     width: 75%;
+  }
+
+  form ::placeholder {
+    color: $unselected;
   }
 
   .btn {
@@ -149,6 +153,15 @@ main.container {
     }
     a {
       color: var(--primary);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main.container {
+    gap: $spacing-5;
+    form {
+      width: 100%;
     }
   }
 }

@@ -13,41 +13,48 @@ onMounted(() => {
 <template>
   <main class="container">
     <div>
-      <h2 :class="{ active: isTitleVisible }">Expertise en developpement de projets web</h2>
+      <h1 :class="{ active: isTitleVisible }">Expertises :</h1>
     </div>
     <div>
-      <h2 :class="{ active: isTitleVisible }">Développements sur-mesure</h2>
+      <h2>Développement de projets web</h2>
     </div>
     <div>
-      <h2 :class="{ active: isTitleVisible }">Optimisation du référencement</h2>
+      <h2>Développements sur-mesure</h2>
     </div>
     <div>
-      <h2 :class="{ active: isTitleVisible }">Créativité graphique et webdesign</h2>
+      <h2>Optimisation du référencement</h2>
     </div>
     <div>
-      <h2 :class="{ active: isTitleVisible }">Adaptabilité sur tous les appareils</h2>
+      <h2>Création graphique</h2>
+    </div>
+    <div>
+      <h2>Adaptabilité sur tous les appareils</h2>
     </div>
   </main>
 </template>
 
 <style scoped lang="scss">
 main.container {
-  @include flex;
-  align-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1;
-  gap: $spacing-6;
-  margin-top: $spacing-2;
+  //@include flex;
+  //align-content: center;
+  //flex-direction: column;
+  //flex-wrap: wrap;
+  //flex: 1;
+  //gap: $spacing-6;
+  //margin-top: $spacing-2;
 
-  h2 {
+  > div {
+    margin-bottom: $spacing-7;
+  }
+
+  h1, h2 {
     font-weight: bold;
     letter-spacing: .1em;
     margin-bottom: $spacing-0;
     padding-bottom: -1px;
     transition: $xtra-long-transition-all;
     font-size: $font-small;
-    flex: 1;
+    //flex: 1;
     text-decoration: underline var(--background-color);
 
     &.active {
@@ -61,9 +68,19 @@ main.container {
       content: '-';
     }
   }
+
+  h1 {
+    margin-top: $spacing-1;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-left: $spacing-2;
+  }
+
   @media screen and (max-width: 768px) {
     h2 {
-      font-size: $font-xtra-small;
+      font-size: $font-medium;
     }
   }
 }

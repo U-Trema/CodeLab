@@ -137,6 +137,7 @@ main {
   }
 
   @media screen and (max-width: 768px) {
+    padding: $spacing-3 0 $spacing-6;
     overflow-y: scroll;
       div#main {
       flex-direction: column;
@@ -147,6 +148,7 @@ main {
         padding: $spacing-3;
         justify-content: center;
         flex-direction: row-reverse;
+        margin-bottom: 0;
       }
       div#picture {
         margin: unset;

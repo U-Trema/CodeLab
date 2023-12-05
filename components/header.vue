@@ -63,6 +63,7 @@ header {
     justify-content: flex-end;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     gap: $spacing-2;
     position: relative;
     padding: $spacing-2 $spacing-4;

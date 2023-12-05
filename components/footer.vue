@@ -14,8 +14,9 @@ const test = () => {
 <template>
   <footer>
     <nav class="nav">
-      <Switch class="switch" @mouseup="test"/>
-<!--      <NuxtLink class="box-container" to="/services">-->
+<!--      <Switch class="switch" @mouseup="test"/>-->
+
+      <!--      <NuxtLink class="box-container" to="/services">-->
 <!--        <Box :active="route.path === '/services'">-->
 <!--          Services-->
 <!--        </Box>-->

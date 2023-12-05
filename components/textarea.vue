@@ -54,7 +54,7 @@ div.container {
       opacity: 1;
       padding-left: 2px;
       transform: translateY(-35px);
-      //transition: 0.3s;
+      transition: 0.3s;
     }
   }
 
@@ -67,6 +67,17 @@ div.container {
     position: absolute;
     top: $spacing-3;
     //transition: $xtra-long-transition-all;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.container {
+    textarea.textarea {
+      &:focus ~ label.label {
+        transform: translateY(-25px);
+        transition: 0.3s;
+      }
+    }
   }
 }
 </style>
