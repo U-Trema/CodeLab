@@ -24,12 +24,13 @@ const hiraganas = generateCharacterList(0x3041, 0x3096, true);
 const symboles = generateCharacterList(0x0021, 0x002F) + '!<>-_\\/[]{}—=+*^?#________ ';
 const chars = arabicDigits + hiraganas + symboles;
 const phrases = [
-  'Developpeurs informatique',
-  "Applications",
-  'Web',
-  'Mobile',
-  'Site internet',
-  'Responsive',
+  'Sites internet',
+  "Web",
+  "Applications mobile",
+  "Applications logiciel",
+  "Design",
+  "Référencement",
+  "Création graphique"
 ];
 
 let frameRequest;
