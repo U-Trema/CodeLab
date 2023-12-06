@@ -157,7 +157,6 @@ body {
   overflow: hidden;
   max-height: 100vh;
 }
-
 @media screen and (min-aspect-ratio: 13/9) {
   html {
     transform: rotate(-90deg);
@@ -172,6 +171,7 @@ body {
     height: inherit;
   }
 }
+
 @media screen and (min-width: 1292px) {
   html {
     transform: none;
@@ -179,6 +179,7 @@ body {
     width: 100%;
     overflow-x: none;
     position: relative;
+    top: 0;
   }
   .bw-dashboard {
     height: 100vh;
