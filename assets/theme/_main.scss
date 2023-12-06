@@ -157,31 +157,14 @@ body {
   overflow: hidden;
   max-height: 100vh;
 }
-@media screen and (min-aspect-ratio: 13/9) {
+html {
+  opacity: 1;
+  transition: $transition-all;
+}
+
+@media only screen and (orientation:landscape) {
   html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  .bw-dashboard {
-    height: inherit;
+    opacity: 0;
   }
 }
 
-@media screen and (min-width: 1292px) {
-  html {
-    transform: none;
-    transform-origin: none;
-    width: 100%;
-    overflow-x: none;
-    position: relative;
-    top: 0;
-  }
-  .bw-dashboard {
-    height: 100vh;
-  }
-}

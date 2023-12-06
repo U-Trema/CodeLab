@@ -1,50 +1,36 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import Switch from "./components/switch.vue";
+import { Home } from "lucide-vue-next";
+import { onMounted, ref } from "vue";
 
 const isBoxShadowVisible = ref(false);
-const colorMode = useColorMode();
-const changeMode = () => colorMode.value = colorMode.value === "light" ? "dark" : "light";
 
 onMounted(() => {
-  screen.orientation.lock('portrait');
-
   setTimeout(() => {
     isBoxShadowVisible.value = true;
   }, 1000);
 });
-
-useHead({
-  title: "UTrema",
-  meta: [
-    {name: "description", content: "UTrema - Présentation des Experts en Développement"},
-    {name: "image", content: "/images/ogImage.png"},
-    {name: "url", content: "https://utrema.fr"},
-  ],
-});
-useSeoMeta({
-  title: "ÜTrema",
-  ogTitle: "ÜTrema",
-  description: "UTrema - Présentation des Experts en Développement",
-  ogDescription: "UTrema - Présentation des Experts en Développement",
-  ogImage: "/images/ogImage.png",
-});
-
 </script>
 
 <template>
   <div class="application-container">
     <div class="inner-container" :class="{ active: isBoxShadowVisible }">
-      <Header/>
       <div class="content-container">
-        <NuxtPage/>
+        <NuxtLink to="/" class="home">
+          <div>404</div>
+        </NuxtLink>
+        <NuxtLink to="/" class="home">
+          <div>This page does not exist</div>
+        </NuxtLink>
+        <NuxtLink to="/" class="home">
+          <div>The page you are looking for could not be found.</div>
+        </NuxtLink>
       </div>
-      <Footer :changeMode="changeMode"/>
     </div>
   </div>
+
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 div.application-container {
   @include flex;
   align-items: center;
@@ -81,10 +67,15 @@ div.application-container {
     & > div.content-container {
       @include flex;
       flex-direction: column;
+      text-align: center;
       flex-grow: 1;
       overflow: hidden;
       padding: $spacing-2;
       transition: $transition-all;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-5;
+      font-size: $font-medium;
     }
   }
 

@@ -176,7 +176,6 @@ main.container {
 
 @media screen and (max-width: 768px) {
   main.container {
-    gap: $spacing-5;
     form {
       width: 100%;
     }
