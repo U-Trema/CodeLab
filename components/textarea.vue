@@ -66,7 +66,7 @@ div.container {
     pointer-events: none;
     position: absolute;
     top: $spacing-3;
-    //transition: $xtra-long-transition-all;
+    transition: $xtra-long-transition-all;
   }
 }
 
@@ -74,8 +74,7 @@ div.container {
   div.container {
     textarea.textarea {
       &:focus ~ label.label {
-        transform: translateY(-25px);
-        transition: 0.3s;
+        //transform: translateY(-25px);
       }
     }
   }

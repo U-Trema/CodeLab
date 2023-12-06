@@ -51,6 +51,7 @@ button.button {
   color: var(--text-base);
   cursor: pointer;
   flex-direction: column;
+  font: inherit;
   font-size: $font-xtra-small;
   height: $spacing-7;
   justify-content: center;

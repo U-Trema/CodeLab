@@ -55,6 +55,7 @@ div.container {
     box-sizing: border-box;
     color: var(--text-base);
     display: block;
+    font: inherit;
     font-size: $font-xtra-small;
     height: $spacing-7;
     line-height: $spacing-3;

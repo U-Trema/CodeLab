@@ -99,6 +99,7 @@ div.application-container {
   }
 
   @media screen and (max-width: 768px) {
+    align-items: flex-start;
     padding: $spacing-5;
     & > div.inner-container {
       aspect-ratio: 2/3;
