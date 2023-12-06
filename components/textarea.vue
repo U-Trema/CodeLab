@@ -74,7 +74,7 @@ div.container {
   div.container {
     textarea.textarea {
       &:focus ~ label.label {
-        //transform: translateY(-25px);
+        transform: translateY(-20px);
       }
     }
   }
