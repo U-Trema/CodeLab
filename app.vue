@@ -7,8 +7,6 @@ const colorMode = useColorMode();
 const changeMode = () => colorMode.value = colorMode.value === "light" ? "dark" : "light";
 
 onMounted(() => {
-  screen.orientation.lock('portrait');
-
   setTimeout(() => {
     isBoxShadowVisible.value = true;
   }, 1000);
